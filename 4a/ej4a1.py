@@ -38,7 +38,11 @@ list_2 = [4, 5, 6, 7, 8]
 
 
 def find_intersection(list_1, list_2):
-    # Write here your code
+    interseccion = []
+    for elemento in lista1:
+        if elemento in lista2:
+            interseccion.append(elemento)
+    return interseccion
     pass
 
 
