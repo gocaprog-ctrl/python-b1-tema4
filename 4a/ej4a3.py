@@ -37,7 +37,12 @@ Exemple:
 
 
 def descending_list_iterator(numbers_list):
-    # Write here your code
+    n = len(numbers_list)
+    for i in range(n - 1):
+        for j in range(n -i- 1):
+            if numbers_list[j] < numbers_list[j + 1]:
+                numbers_list[j], numbers_list[j + 1] = numbers_list[j + 1], numbers_list[j]
+    return numbers_list
     pass
 
 
